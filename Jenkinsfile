@@ -1,4 +1,4 @@
-ipeline {
+pipeline {
     agent {
         label 'AGENT-1'
     }
@@ -22,6 +22,7 @@ ipeline {
                 }
             }
         }
+
         stage('Init'){
             steps{
                 sh """
@@ -48,6 +49,7 @@ ipeline {
                 """
             }
         }
+       
     }
     post { 
         always { 
